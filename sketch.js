@@ -2,14 +2,14 @@
 function setup() {
   createCanvas(500, 500, WEBGL);
   ambientMaterial(255);
+  frameRate(55);
    
 }
 
-let tamano = 0;
+let tamano = 60;
 let t = tamano + ((1 + (5^0.5))/2)*10; 
 
 let v = tamano + 19.5;
-v= t;
 v = 0 + 0.0010; 
 
 
@@ -23,10 +23,10 @@ function draw() {
   strokeWeight(4);
   stroke(255, 155, 0, 0.7);
   
-  v += 0.07;
-  if(v>19.5){
-     v = 19.5;
-  }
+  v += 0.1;
+  /* if(v>29.5){
+     v = 29.5;
+  } */
 
   //Puntos 015
   beginShape();
@@ -168,8 +168,8 @@ function draw() {
   vertex(-v, -t, 0);
   endShape(CLOSE)
   
-  if(v==19.5){
-    wait(6000);
+  if(v>65){
+    wait(60000);
   }
 
   // http://blog.andreaskahler.com/2009/06/creating-icosphere-mesh-in-code.html
