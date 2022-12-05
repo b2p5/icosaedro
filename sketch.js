@@ -5,22 +5,18 @@ function setup() {
    
 }
 
-let tamano = 20;
+let tamano = 0;
 let t = tamano + ((1 + (5^0.5))/2)*10; 
 
 let v = tamano + 19.5;
 v = 0 + 0.0010; 
 
 
-let img;
-function preload() {
-  //img = loadImage('Imagen/descarga.jpg');
-}
+ 
 function draw() {
   background(555);
   rotateY(millis() / 1000);
   rotateX(millis() / 1000);
-  //texture(img);
   fill(255);
   
   strokeWeight(4);
