@@ -9,6 +9,7 @@ let tamano = 0;
 let t = tamano + ((1 + (5^0.5))/2)*10; 
 
 let v = tamano + 19.5;
+v= t;
 v = 0 + 0.0010; 
 
 
